@@ -1,62 +1,96 @@
 import React from 'react';
 import '../Header.css';
-import headshot from '../Assets/addisu-bakery-logo.png'
+import logo from '../Assets/logo.png';
+import injera from '../Assets/injera.png';
+import teff from '../Assets/teff.png';
+import spices from '../Assets/spices.png';
+import coffee from '../Assets/coffee.png';
 
 export default function Home() {
     return (
         <div>
-            <img className="col-2" id="img" src={headshot} alt="Berekt Ashenafi"></img>
-            <h1 class="home-header">Welcome to my Portfolio!</h1>
-
+            <img className="col-2" id="img" src={logo} alt="Addisu Bakery"></img>
             <h5 class="desc-home">
-                Hello, my name is Berekt Ashenafi and I am a Full-stack Web Developer with a passion for creating apps and contributing to the future of technology.
-            </h5>
-            <h4 class="desc-home">
-                Some of the skills I have include:
-            </h4>
-            <ul class="skills-list">
-                <li class="skills-row-1">
-                    <li>
-                        HTML
-                    </li>
-                    <li>
-                        CSS
-                    </li>
-                    <li>
-                        JavaScript
-                    </li>
-                    <li>
-                        React JS
-                    </li>
-                    <li>
-                        Node JS
-                    </li>
-                </li>
-                <li class="skills-row-2">
-                    <li>
-                        MongoDB
-                    </li>
-                    <li>
-                        SQL
-                    </li>
-
-                    <li>
-                        Web APIs
-                    </li>
-                    <li>
-                        NoSQL
-                    </li>
-                    <li>
-                        Express
-                    </li>
-                    <li>
-                        Github
-                    </li>
-                    <li>
-                        Slack
-                    </li>
-                </li>
-            </ul>
+            Give us a call at: 614-235-2727 </h5>
+            <h5 class="desc-home">Location: 873 S. Hamilton Rd. Columbus, Ohio 43227</h5>
+            <div className='row'>
+                <h1>How Do You Turn Plastic Into Yarn / Thread?</h1>
+            </div>
+            <br />
+            <br />
+            <div className='row'>
+                <div className='col-md-6'>
+                    <h3>Step #1 Collect Plastic: </h3>
+                    <p>
+                        The first step is collecting plastic from the landfills, oceans, or even cities.
+                        It is massively important to ensure this doesn’t harm the natural habitat of animals and marine life.
+                        From plastic bottles to containers, all plastic products are gathered up and sent to a plastic processing factory.
+                    </p>
+                </div>
+                <div className='col-md-6'>
+                    <img src={coffee} style={{ width: "100%" }} alt="collecting plastic of beach" />
+                </div>
+            </div>
+            <br />
+            <br />
+            <div className='row'>
+                <div className='col-md-6'>
+                    <h3>Step #2 Break It Down: </h3>
+                    <p>
+                        Those plastic products are separated, and the recyclable plastic is passed through a chopping machine that breaks everything down into small chips, once all the paper labels are removed.
+                        Those chunky plastic chips are further processed to turn them into the machine to make them finer.
+                    </p>
+                </div>
+                <div className='col-md-6'>
+                    <img src={injera} style={{ width: "100%" }} alt="plastic in factory for processing" />
+                </div>
+            </div>
+            <br />
+            <br />
+            <div className='row'>
+                <div className='col-md-6'>
+                    <h3>Step #3 Melt The Chips:</h3>
+                    <p>
+                        All the processed, fine plastic chips are thrown into a melting machine that treats the plastic at high heat.
+                        The melted plastic is then filtered to remove any kind of impurity.
+                        This step is essential to bring the plastic to phase-1 of the recycled fabric making process.
+                    </p>
+                </div>
+                <div className='col-md-6'>
+                    <img src={spices} style={{ width: "100%" }} alt="pile of plastic chips" />
+                </div>
+            </div>
+            <br />
+            <br />
+            <div className='row'>
+                <div className='col-md-6'>
+                    <img src={teff} style={{ width: "100%" }} alt="yarn spun from plastic" />
+                </div>
+                <div className='col-md-6'>
+                    <h3>Step #4 Spin It Into Yarn:</h3>
+                    <p>
+                        Once all the plastic is melted and filtered, it goes through the spinning process.
+                        The melted plastic is turned into polyester yarns and spun together with the yarn of choice to make the plastic fabric wearable.
+                        The yarn is collected and passed on to the weaving department.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div className='row'>
+                <div className='col-md-6'>
+                    <img src={logo} style={{ width: "100%" }} alt="clothes made from plastic" />
+                </div>
+                <div className='col-md-6'>
+                    <h3>Step #5 Weave The Fabric:</h3>
+                    <p>
+                        The last step is weaving the polyester into the fabric.
+                        You can make anything, it is all up to your imagination!
+                    </p>
+                </div>
+            </div>
+            <br />
+            <br />
         </div>
 
     );
